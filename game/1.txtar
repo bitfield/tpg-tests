@@ -1,0 +1,2 @@
+! exec go test
+stdout 'want "You can see here a battery, a key, and a tourist map.", got "You can see herea battery, a key, a tourist map."'
