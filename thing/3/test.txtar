@@ -1,0 +1,4 @@
+! exec go test
+stdout 'want X: 1, got X: 0'
+stdout 'want Y: 2, got Y: 0'
+stdout 'want Z: 3, got Z: 0'

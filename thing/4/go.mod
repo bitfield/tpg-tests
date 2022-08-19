@@ -1,4 +1,4 @@
-module game
+module thing
 
 go 1.19
 

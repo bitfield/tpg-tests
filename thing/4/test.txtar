@@ -1,0 +1,7 @@
+! exec go test
+stdout 'X: 1'
+stdout 'X: 0'
+stdout 'Y: 2'
+stdout 'Y: 0'
+stdout 'Z: 3'
+stdout 'Z: 0'
