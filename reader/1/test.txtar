@@ -1,0 +1,2 @@
+! exec go test
+stdout 'want error for broken reader, got nil'

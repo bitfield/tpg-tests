@@ -1,0 +1,3 @@
+! exec go test
+stdout -count=1 'wrong error: open bogus: no such file or directory'
+stdout 'wrong error: Go home, Go, you''re drunk'

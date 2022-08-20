@@ -1,0 +1,3 @@
+! exec go test
+stdout 'want error for invalid input'
+stdout 'valid input formatted'
