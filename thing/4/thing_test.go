@@ -8,6 +8,7 @@ import (
 )
 
 func TestNewThing(t *testing.T) {
+	t.Parallel()
 	x, y, z := 1, 2, 3
 	want := &thing.Thing{
 		X: x,

@@ -1,12 +1,12 @@
 package game_test
 
 import (
-	"testing"
-
 	"game"
+	"testing"
 )
 
 func TestListItems(t *testing.T) {
+	t.Parallel()
 	input := []string{
 		"a battery",
 		"a key",

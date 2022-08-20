@@ -10,6 +10,7 @@ import (
 )
 
 func TestRequestReturnsErrRateLimitWhenRatelimited(t *testing.T) {
+	t.Parallel()
 	ts := newRateLimitingServer()
 	defer ts.Close()
 	err := req.Request(ts.URL)

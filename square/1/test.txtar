@@ -1,0 +1,2 @@
+! exec go test
+stdout 'Square\(21\) is negative: -441'

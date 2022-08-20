@@ -7,6 +7,7 @@ import (
 )
 
 func TestReadAll_ReturnsAnyReadError(t *testing.T) {
+	t.Parallel()
 	input := strings.NewReader("any old data")
 	_, err := reader.ReadAll(input)
 	if err == nil {

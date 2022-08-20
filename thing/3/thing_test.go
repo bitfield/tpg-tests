@@ -6,6 +6,7 @@ import (
 )
 
 func TestNewThing(t *testing.T) {
+	t.Parallel()
 	x, y, z := 1, 2, 3
 	got, err := thing.NewThing(x, y, z)
 	if err != nil {

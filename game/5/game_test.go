@@ -8,6 +8,7 @@ import (
 )
 
 func TestListItems(t *testing.T) {
+	t.Parallel()
 	type testCase struct {
 		input []string
 		want  string

@@ -6,6 +6,7 @@ import (
 )
 
 func TestValid(t *testing.T) {
+	t.Parallel()
 	want := true
 	got := valid.Valid("valid input")
 	if want != got {

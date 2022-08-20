@@ -7,6 +7,7 @@ import (
 )
 
 func TestOpenGivesNonNilErrorForBogusFile(t *testing.T) {
+	t.Parallel()
 	_, err := store.Open("bogus file")
 	if err == nil {
 		t.Error("want error opening bogus store file")
@@ -14,6 +15,7 @@ func TestOpenGivesNonNilErrorForBogusFile(t *testing.T) {
 }
 
 func TestOpenGivesSpecificErrorForBogusFile(t *testing.T) {
+	t.Parallel()
 	want := errors.New("open bogus: no such file or directory")
 	_, got := store.Open("bogus")
 	if got != want {
@@ -22,6 +24,7 @@ func TestOpenGivesSpecificErrorForBogusFile(t *testing.T) {
 }
 
 func TestOpenGivesSpecificErrorStringForBogusFile(t *testing.T) {
+	t.Parallel()
 	want := errors.New("open bogus: no such file or directory")
 	_, got := store.Open("bogus")
 	if got.Error() != want.Error() {
@@ -30,6 +33,7 @@ func TestOpenGivesSpecificErrorStringForBogusFile(t *testing.T) {
 }
 
 func TestOneErrorValueEqualsAnother(t *testing.T) {
+	t.Parallel()
 	want := errors.New("Go home, Go, you're drunk")
 	got := errors.New("Go home, Go, you're drunk")
 	if got != want {

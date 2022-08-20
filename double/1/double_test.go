@@ -6,6 +6,7 @@ import (
 )
 
 func TestDouble2Returns4(t *testing.T) {
+	t.Parallel()
 	want := 4
 	got := double.Double(2)
 	if want != got {

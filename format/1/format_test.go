@@ -14,6 +14,7 @@ const (
 )
 
 func TestFormatData_ErrorsOnInvalidInput(t *testing.T) {
+	t.Parallel()
 	_, err := format.Data(invalidInput)
 	if err == nil {
 		t.Error("want error for invalid input")
@@ -21,6 +22,7 @@ func TestFormatData_ErrorsOnInvalidInput(t *testing.T) {
 }
 
 func TestFormatData_IsCorrectForValidInput(t *testing.T) {
+	t.Parallel()
 	want := validInputFormatted
 	got, err := format.Data(validInput)
 	if err != nil {

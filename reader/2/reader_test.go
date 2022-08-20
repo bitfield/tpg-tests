@@ -13,6 +13,7 @@ func (errReader) Read([]byte) (int, error) {
 }
 
 func TestReadAll_ReturnsAnyReadError(t *testing.T) {
+	t.Parallel()
 	input := errReader{} // always returns error
 	_, err := reader.ReadAll(input)
 	if err == nil {

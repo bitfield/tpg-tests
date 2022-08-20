@@ -8,6 +8,7 @@ import (
 )
 
 func TestListItems(t *testing.T) {
+	t.Parallel()
 	input := []string{
 		"a battery",
 		"a key",
