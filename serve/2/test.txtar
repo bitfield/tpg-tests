@@ -1,0 +1,2 @@
+! exec go test
+stdout 'connect: connection refused'
