@@ -1,4 +1,4 @@
-package user
+package user2
 
 import (
 	"errors"

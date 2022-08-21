@@ -1,0 +1,2 @@
+! exec go test
+stdout 'panic: runtime error: index out of range'

@@ -1,4 +1,4 @@
-package reader
+package reader2
 
 import "io"
 

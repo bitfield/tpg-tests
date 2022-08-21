@@ -1,8 +1,8 @@
-package thing_test
+package thing2_test
 
 import (
 	"testing"
-	"thing"
+	thing "thing2"
 )
 
 func TestNewThing(t *testing.T) {

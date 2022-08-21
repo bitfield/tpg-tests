@@ -1,0 +1,2 @@
+exec go test -cover
+stdout 'coverage: 100.0% of statements'

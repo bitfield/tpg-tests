@@ -1,4 +1,4 @@
-module game
+module game7
 
 go 1.19
 

@@ -1,9 +1,9 @@
-package user_test
+package user4_test
 
 import (
 	"testing"
 
-	"user"
+	user "user4"
 
 	"github.com/google/go-cmp/cmp"
 )

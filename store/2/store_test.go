@@ -1,7 +1,7 @@
-package store_test
+package store2_test
 
 import (
-	"store"
+	store "store2"
 	"testing"
 )
 

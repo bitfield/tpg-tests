@@ -1,4 +1,4 @@
-package thing
+package thing2
 
 type Thing struct {
 	X, Y, Z int

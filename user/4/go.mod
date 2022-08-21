@@ -1,4 +1,4 @@
-module user
+module user4
 
 go 1.19
 

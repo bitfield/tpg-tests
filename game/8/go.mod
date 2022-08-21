@@ -1,4 +1,4 @@
-module game
+module game8
 
 go 1.19
 

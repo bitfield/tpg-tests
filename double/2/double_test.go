@@ -1,9 +1,10 @@
-package double_test
+package double2_test
 
 import (
-	"double"
 	"fmt"
 	"testing"
+
+	double "double2"
 )
 
 func TestDouble2Returns4(t *testing.T) {
@@ -21,13 +22,13 @@ func ExampleDouble() {
 	// 4
 }
 
-func ExampleDouble_with_2() {
+func ExampleDouble_with2() {
 	fmt.Println(double.Double(2))
 	// Output:
 	// 4
 }
 
-func ExampleDouble_with_3() {
+func ExampleDouble_with3() {
 	fmt.Println(double.Double(3))
 	// Output:
 	// 6

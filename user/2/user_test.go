@@ -1,10 +1,10 @@
-package user_test
+package user2_test
 
 import (
 	"errors"
 	"testing"
 
-	"user"
+	user "user2"
 )
 
 func TestFindUser_GivesErrUserNotFoundForBogusUser(t *testing.T) {

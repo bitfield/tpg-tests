@@ -1,4 +1,4 @@
-package store
+package store2
 
 import (
 	"errors"

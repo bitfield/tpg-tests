@@ -1,11 +1,11 @@
 //go:build go1.18
 
-package guess_test
+package guess2_test
 
 import (
 	"testing"
 
-	"guess"
+	guess "guess2"
 )
 
 func FuzzGuess(f *testing.F) {

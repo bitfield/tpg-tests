@@ -1,8 +1,8 @@
-package reader_test
+package reader2_test
 
 import (
 	"io"
-	"reader"
+	reader "reader2"
 	"testing"
 )
 

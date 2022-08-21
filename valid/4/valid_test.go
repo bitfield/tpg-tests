@@ -1,8 +1,8 @@
-package valid_test
+package valid4_test
 
 import (
 	"testing"
-	"valid"
+	valid "valid4"
 )
 
 func TestValidIsTrueForValidInput(t *testing.T) {

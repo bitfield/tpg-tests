@@ -1,7 +1,3 @@
-package guess
+package guess2
 
-func Guess(n int) {
-	if n == 21 {
-		// do nothing
-	}
-}
+func Guess(n int) {}

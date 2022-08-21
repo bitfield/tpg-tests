@@ -1,4 +1,4 @@
-package game
+package game2
 
 import "strings"
 

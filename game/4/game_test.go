@@ -1,7 +1,7 @@
-package game_test
+package game4_test
 
 import (
-	"game"
+	game "game4"
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
