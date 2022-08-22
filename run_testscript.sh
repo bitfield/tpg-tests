@@ -7,8 +7,12 @@ fi
 
 LISTING=$1
 SCRIPT=${LISTING}-test.txtar
-cp ${LISTING}/test.txtar $SCRIPT || exit
+txtar-c -quote $LISTING >>$SCRIPT.tmp
+# Ensure that any 'unquote' directives come before the actual script
+grep unquote $SCRIPT.tmp >$SCRIPT
+cat ${LISTING}/test.txtar >>$SCRIPT || exit
 echo >>$SCRIPT
-txtar-c $LISTING >>$SCRIPT
+grep -v 'unquote' $SCRIPT.tmp >>$SCRIPT
+rm $SCRIPT.tmp
 echo -n "${LISTING}... " && testscript $SCRIPT || exit
 rm $SCRIPT
