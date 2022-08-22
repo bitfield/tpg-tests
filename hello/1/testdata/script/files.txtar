@@ -1,0 +1,10 @@
+exec cat a.txt b.txt c.txt
+
+-- a.txt --
+...
+
+-- b.txt --
+...
+
+-- c.txt --
+...

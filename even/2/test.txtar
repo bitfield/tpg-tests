@@ -1,2 +1,2 @@
 ! exec go test
-stdout 'fatal error: concurrent map read and map write'
+stdout 'fatal error: concurrent map'

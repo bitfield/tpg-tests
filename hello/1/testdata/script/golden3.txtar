@@ -1,0 +1,5 @@
+exec echo Running with home directory $HOME
+cmpenv stdout golden.txt
+
+-- golden.txt --
+Running with home directory $HOME

@@ -1,0 +1,7 @@
+stdin input.txt
+exec greet
+stdout 'Hello, Kim. Care to join me for some barbecue?'
+
+-- input.txt --
+Kim
+barbecue

@@ -1,0 +1,10 @@
+exec cat misc/a.txt misc/subfolder/b.txt extra/c.txt
+
+-- misc/a.txt --
+...
+
+-- misc/subfolder/b.txt --
+...
+
+-- extra/c.txt --
+...

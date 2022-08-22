@@ -1,0 +1,5 @@
+exec echo hello
+! cmp stdout golden.txt
+
+-- golden.txt --
+goodbye world

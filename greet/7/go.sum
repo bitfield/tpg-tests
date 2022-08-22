@@ -1,0 +1,4 @@
+github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e h1:aoZm08cpOy4WuID//EZDgcC4zIxODThtZNPirFr42+A=
+github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e/go.mod h1:pJLUxLENpZxwdsKMEsNbx1VGcRFpLqf3715MtcvvzbA=
+github.com/rogpeppe/go-internal v1.8.2-0.20220822101705-7a6a5f804c24 h1:UsJPTPLYOFmRAaFigIonQuibZ+xAvg7jF3eEQTIi74w=
+github.com/rogpeppe/go-internal v1.8.2-0.20220822101705-7a6a5f804c24/go.mod h1:WtVeX8xhTBvf0smdhujwtBcq4Qrzq/fJaraNFVN+nFs=

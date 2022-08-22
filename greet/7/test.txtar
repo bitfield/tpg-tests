@@ -1,0 +1,9 @@
+exec go test
+! exec go run ./cmd/greet/main.go
+stdin input.txt
+exec go run ./cmd/greet/main.go
+stdout 'Hello, John. Care to join me for some bacon?'
+
+-- input.txt --
+John
+bacon

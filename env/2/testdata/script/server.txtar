@@ -1,0 +1,4 @@
+exec listen $SERVER_ADDR &
+exec curl -s --retry-connrefused --retry 1 $SERVER_ADDR
+stdout 'Hello from the Go web server'
+wait
