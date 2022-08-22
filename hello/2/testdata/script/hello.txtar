@@ -1,0 +1,9 @@
+# With no arguments, fail and print a usage message
+! exec hello
+! stdout .
+stderr 'usage: hello NAME'
+
+# With an argument, print a greeting using that value
+exec hello Joumana
+stdout 'Hello to you, Joumana'
+! stderr .

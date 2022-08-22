@@ -1,0 +1,4 @@
+exec go test
+exec go run ./cmd/timer/main.go 1ms
+stdout 'Starting a timer for 1ms...'
+stdout 'done'

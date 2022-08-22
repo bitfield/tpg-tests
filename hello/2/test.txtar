@@ -1,0 +1,8 @@
+exec go test
+
+! exec go run ./cmd/hello/main.go
+! stdout .
+stderr 'usage: hello NAME'
+
+exec go run ./cmd/hello/main.go Joumana
+stdout 'Hello to you, Joumana'

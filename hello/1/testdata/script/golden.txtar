@@ -1,0 +1,5 @@
+exec hello
+cmp stdout golden.txt
+
+-- golden.txt --
+hello world

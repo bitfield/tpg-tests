@@ -1,0 +1,3 @@
+exec go test
+exec go run ./cmd/hello/main.go
+stdout 'hello world'

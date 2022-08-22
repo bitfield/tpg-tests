@@ -1,0 +1,2 @@
+exec hello
+stdout 'hello world\n'
