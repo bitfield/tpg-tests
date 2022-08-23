@@ -1,0 +1,2 @@
+exec go test -run 'CompareMaps|CompareSortedSlices'
+! exec go test -run 'CompareSlices'
