@@ -1,2 +1,2 @@
-! exec go test
-stdout 'fatal error: concurrent map'
+! exec go test -race
+stdout 'WARNING: DATA RACE'
