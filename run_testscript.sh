@@ -7,6 +7,7 @@ fi
 
 LISTING=$1
 SCRIPT=${LISTING}-test.txtar
+# go install github.com/bitfield/txtar-c@latest
 txtar-c -quote -script ${LISTING}/test.txtar $LISTING >>$SCRIPT
 echo -n "${LISTING}... " && testscript $SCRIPT || exit
 rm $SCRIPT
