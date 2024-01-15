@@ -3,10 +3,9 @@ package widget_test
 import (
 	"testing"
 
-	"widget"
+	"github.com/bitfield/widget"
 
 	"github.com/DATA-DOG/go-sqlmock"
-	"github.com/google/go-cmp/cmp"
 )
 
 func TestPostgresStore_Retrieve(t *testing.T) {
@@ -20,8 +19,8 @@ func TestPostgresStore_Retrieve(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if !cmp.Equal(want, got) {
-		t.Error(cmp.Diff(want, got))
+	if want != got {
+		t.Errorf("want %#v, got %#v", want, got)
 	}
 }
 

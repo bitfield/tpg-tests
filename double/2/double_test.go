@@ -1,10 +1,10 @@
-package double2_test
+package double_test
 
 import (
 	"fmt"
 	"testing"
 
-	double "double2"
+	"github.com/bitfield/double"
 )
 
 func TestDouble2Returns4(t *testing.T) {

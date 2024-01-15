@@ -1,5 +1,3 @@
-module timer
+module github.com/bitfield/timer
 
 go 1.19
-
-require github.com/google/go-cmp v0.5.8

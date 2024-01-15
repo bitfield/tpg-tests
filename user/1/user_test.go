@@ -2,7 +2,8 @@ package user_test
 
 import (
 	"fmt"
-	"user"
+
+	"github.com/bitfield/user"
 )
 
 func ExampleUser() {

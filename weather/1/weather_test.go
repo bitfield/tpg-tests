@@ -3,9 +3,7 @@ package weather_test
 import (
 	"testing"
 
-	"weather"
-
-	"github.com/google/go-cmp/cmp"
+	"github.com/bitfield/weather"
 )
 
 func TestFormatURL_IncludesLocation(t *testing.T) {
@@ -14,7 +12,7 @@ func TestFormatURL_IncludesLocation(t *testing.T) {
 	want := "https://weather.example.com/?q=Nowhere"
 	got := weather.FormatURL(location)
 	if want != got {
-		t.Error(cmp.Diff(want, got))
+		t.Errorf("want %q, got %q", want, got)
 	}
 }
 
@@ -28,7 +26,7 @@ func TestParseResponse(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if !cmp.Equal(want, got) {
-		t.Error(cmp.Diff(want, got))
+	if want != got {
+		t.Errorf("want %#v, got %#v", want, got)
 	}
 }

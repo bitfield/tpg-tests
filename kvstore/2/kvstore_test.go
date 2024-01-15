@@ -1,4 +1,4 @@
-package kvstore2_test
+package kvstore_test
 
 import (
 	"runtime"
@@ -6,7 +6,7 @@ import (
 	"sync"
 	"testing"
 
-	kvstore "kvstore2"
+	"github.com/bitfield/kvstore"
 )
 
 func TestSmokeKVStore(t *testing.T) {
@@ -15,12 +15,12 @@ func TestSmokeKVStore(t *testing.T) {
 	wg.Add(1)
 	s := kvstore.NewStore()
 	go func() {
-		for i := 0; i < 1000; i++ {
+		for i := range 1000 {
 			s.Set("foo", strconv.Itoa(i))
 		}
 		wg.Done()
 	}()
-	for i := 0; i < 1000; i++ {
+	for i := range 1000 {
 		_ = s.Get("foo")
 		runtime.Gosched()
 	}

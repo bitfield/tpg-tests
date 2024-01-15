@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"hello"
+	"github.com/bitfield/hello"
 
 	"github.com/rogpeppe/go-internal/testscript"
 )

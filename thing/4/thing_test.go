@@ -1,8 +1,9 @@
-package thing4_test
+package thing_test
 
 import (
 	"testing"
-	thing "thing4"
+
+	"github.com/bitfield/thing"
 
 	"github.com/google/go-cmp/cmp"
 )

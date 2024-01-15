@@ -1,9 +1,10 @@
-package reader2_test
+package reader_test
 
 import (
 	"io"
-	reader "reader2"
 	"testing"
+
+	"github.com/bitfield/reader"
 )
 
 type errReader struct{}

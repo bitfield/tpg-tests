@@ -2,8 +2,9 @@ package store_test
 
 import (
 	"errors"
-	"store"
 	"testing"
+
+	"github.com/bitfield/store"
 )
 
 func TestOpenGivesNonNilErrorForBogusFile(t *testing.T) {

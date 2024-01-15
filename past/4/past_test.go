@@ -1,10 +1,10 @@
-package past4_test
+package past_test
 
 import (
 	"testing"
 	"time"
 
-	past "past4"
+	"github.com/bitfield/past"
 )
 
 func TestOneHourAgo(t *testing.T) {

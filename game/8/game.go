@@ -1,4 +1,4 @@
-package game8
+package game
 
 import "strings"
 

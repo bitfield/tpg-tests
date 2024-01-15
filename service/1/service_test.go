@@ -1,8 +1,9 @@
 package service_test
 
 import (
-	"service"
 	"testing"
+
+	"github.com/bitfield/service"
 )
 
 func TestRunningIsTrueWhenServiceIsRunning(t *testing.T) {

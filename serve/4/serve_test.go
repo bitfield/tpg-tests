@@ -1,11 +1,11 @@
-package serve4_test
+package serve_test
 
 import (
 	"net"
 	"testing"
 	"time"
 
-	serve "serve4"
+	"github.com/bitfield/serve"
 )
 
 func TestListenAsyncWithTimeout(t *testing.T) {
@@ -13,6 +13,7 @@ func TestListenAsyncWithTimeout(t *testing.T) {
 	addr := randomLocalAddr(t)
 	serve.ListenAsync(addr)
 	timeout := time.NewTimer(100 * time.Millisecond)
+	defer timeout.Stop()
 	_, err := net.Dial("tcp", addr)
 	for err != nil {
 		select {

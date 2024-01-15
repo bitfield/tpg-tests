@@ -1,4 +1,4 @@
-package runes4
+package runes
 
 import "unicode/utf8"
 

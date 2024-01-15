@@ -1,11 +1,9 @@
-package fingerprint2_test
+package fingerprint_test
 
 import (
 	"testing"
 
-	fingerprint "fingerprint2"
-
-	"github.com/google/go-cmp/cmp"
+	"github.com/bitfield/fingerprint"
 )
 
 func TestFingerprint(t *testing.T) {
@@ -14,10 +12,10 @@ func TestFingerprint(t *testing.T) {
 	orig := fingerprint.Hash(data)
 	same := fingerprint.Hash(data)
 	different := fingerprint.Hash([]byte("Hello, Newman"))
-	if !cmp.Equal(orig, same) {
+	if orig != same {
 		t.Error("same data produced different hash")
 	}
-	if cmp.Equal(orig, different) {
+	if orig == different {
 		t.Error("different data produced same hash")
 	}
 }

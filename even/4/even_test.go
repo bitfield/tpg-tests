@@ -1,10 +1,10 @@
-package even4_test
+package even_test
 
 import (
 	"strconv"
 	"testing"
 
-	even "even4"
+	"github.com/bitfield/even"
 )
 
 func TestIsEven_IsTrueForEvenNumbers(t *testing.T) {

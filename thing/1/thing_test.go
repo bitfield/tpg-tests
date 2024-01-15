@@ -2,7 +2,8 @@ package thing_test
 
 import (
 	"testing"
-	"thing"
+
+	"github.com/bitfield/thing"
 )
 
 func TestNewThing(t *testing.T) {

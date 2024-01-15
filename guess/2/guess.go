@@ -1,3 +1,3 @@
-package guess2
+package guess
 
 func Guess(n int) {}

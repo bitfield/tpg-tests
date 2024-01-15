@@ -1,3 +1,3 @@
-module even4
+module github.com/bitfield/even
 
 go 1.19

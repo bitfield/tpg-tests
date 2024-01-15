@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"past"
+	"github.com/bitfield/past"
 
 	"github.com/stretchr/testify/assert"
 )

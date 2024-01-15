@@ -1,5 +1,5 @@
-module load2
+module github.com/bitfield/load
 
 go 1.19
 
-require github.com/google/go-cmp v0.5.8
+require github.com/google/go-cmp v0.6.0

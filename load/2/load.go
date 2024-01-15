@@ -1,4 +1,4 @@
-package load2
+package load
 
 import (
 	"io"

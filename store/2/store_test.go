@@ -1,8 +1,9 @@
-package store2_test
+package store_test
 
 import (
-	store "store2"
 	"testing"
+
+	"github.com/bitfield/store"
 )
 
 func TestOpenGivesErrUnopenableForBogusFile(t *testing.T) {

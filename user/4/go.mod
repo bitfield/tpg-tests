@@ -1,5 +1,3 @@
-module user4
+module github.com/bitfield/user
 
 go 1.19
-
-require github.com/google/go-cmp v0.5.8

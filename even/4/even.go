@@ -1,4 +1,4 @@
-package even4
+package even
 
 import "sync"
 

@@ -1,11 +1,11 @@
 package main
 
 import (
-	"hello"
 	"os"
+
+	"github.com/bitfield/hello"
 )
 
 func main() {
-	status := hello.Main()
-	os.Exit(status)
+	os.Exit(hello.Main())
 }

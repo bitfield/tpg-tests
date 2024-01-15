@@ -1,11 +1,12 @@
 package game_test
 
 import (
-	"game"
 	"testing"
+
+	"github.com/bitfield/game"
 )
 
-func TestListItems(t *testing.T) {
+func TestListItems_GivesCorrectResultForInput(t *testing.T) {
 	t.Parallel()
 	input := []string{
 		"a battery",

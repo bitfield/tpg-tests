@@ -3,7 +3,7 @@ package add_test
 import (
 	"testing"
 
-	"add"
+	"github.com/bitfield/add"
 )
 
 func TestAdd(t *testing.T) {

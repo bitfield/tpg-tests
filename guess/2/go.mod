@@ -1,3 +1,3 @@
-module guess2
+module github.com/bitfield/guess
 
 go 1.19

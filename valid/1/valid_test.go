@@ -2,7 +2,8 @@ package valid_test
 
 import (
 	"testing"
-	"valid"
+
+	"github.com/bitfield/valid"
 )
 
 func TestValid(t *testing.T) {

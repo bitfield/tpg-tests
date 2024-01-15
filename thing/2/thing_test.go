@@ -1,8 +1,9 @@
-package thing2_test
+package thing_test
 
 import (
 	"testing"
-	thing "thing2"
+
+	"github.com/bitfield/thing"
 )
 
 func TestNewThing(t *testing.T) {

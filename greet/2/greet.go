@@ -1,4 +1,4 @@
-package greet2
+package greet
 
 import (
 	"fmt"

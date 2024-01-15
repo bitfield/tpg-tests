@@ -4,20 +4,18 @@ import (
 	"math/rand"
 	"testing"
 
-	"codec"
-
-	"github.com/google/go-cmp/cmp"
+	"github.com/bitfield/codec"
 )
 
 func TestEncodeFollowedByDecodeGivesStartingValue(t *testing.T) {
 	t.Parallel()
-	input := rand.Intn(10)
+	input := rand.Intn(10) + 1
 	encoded := codec.Encode(input)
 	t.Logf("encoded value: %#v", encoded)
-	// after the round trip, we should get what we started with
 	want := input
 	got := codec.Decode(encoded)
+	// after the round trip, we should get what we started with
 	if want != got {
-		t.Error(cmp.Diff(want, got))
+		t.Errorf("want %d, got %d", want, got)
 	}
 }

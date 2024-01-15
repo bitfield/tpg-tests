@@ -1,14 +1,14 @@
-package game10_test
+package game_test
 
 import (
 	"testing"
 
-	game "game10"
+	"github.com/bitfield/game"
 
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestListItems(t *testing.T) {
+func TestListItems_GivesCorrectResultFor(t *testing.T) {
 	t.Parallel()
 	cases := map[string]struct {
 		input []string

@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"timer"
+	"github.com/bitfield/timer"
 )
 
 func main() {

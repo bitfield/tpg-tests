@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	"even"
+	"github.com/bitfield/even"
 )
 
 func TestIsEven_IsTrueForEvenNumbers(t *testing.T) {

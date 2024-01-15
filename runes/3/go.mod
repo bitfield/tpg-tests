@@ -1,3 +1,3 @@
-module runes3
+module github.com/bitfield/runes
 
 go 1.19

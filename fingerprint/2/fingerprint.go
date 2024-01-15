@@ -1,4 +1,4 @@
-package fingerprint2
+package fingerprint
 
 import "crypto/sha256"
 

@@ -1,10 +1,10 @@
-package user2_test
+package user_test
 
 import (
 	"errors"
 	"testing"
 
-	user "user2"
+	"github.com/bitfield/user"
 )
 
 func TestFindUser_GivesErrUserNotFoundForBogusUser(t *testing.T) {

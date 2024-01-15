@@ -1,10 +1,10 @@
-package greet2_test
+package greet_test
 
 import (
 	"bytes"
 	"testing"
 
-	greet "greet2"
+	"github.com/bitfield/greet"
 
 	"github.com/google/go-cmp/cmp"
 )

@@ -1,4 +1,4 @@
-package user7
+package user
 
 import "sync"
 

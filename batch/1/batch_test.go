@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"batch"
+	"github.com/bitfield/batch"
 )
 
 func TestRunBatchJob(t *testing.T) {

@@ -3,10 +3,9 @@ package main
 import (
 	"os"
 
-	greet "greet7"
+	"github.com/bitfield/greet"
 )
 
 func main() {
-	status := greet.Main()
-	os.Exit(status)
+	os.Exit(greet.Main())
 }

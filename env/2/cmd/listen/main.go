@@ -1,9 +1,11 @@
 package main
 
 import (
-	env "env2"
+	"os"
+
+	"github.com/bitfield/env"
 )
 
 func main() {
-	env.Main()
+	os.Exit(env.Main())
 }

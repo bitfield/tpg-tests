@@ -1,9 +1,9 @@
-package user5_test
+package user_test
 
 import (
 	"testing"
 
-	user "user5"
+	"github.com/bitfield/user"
 )
 
 func TestCreate(t *testing.T) {

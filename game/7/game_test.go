@@ -1,13 +1,14 @@
-package game7_test
+package game_test
 
 import (
-	game "game7"
 	"testing"
+
+	"github.com/bitfield/game"
 
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestListItems(t *testing.T) {
+func TestListItems_GivesCorrectResultForInput(t *testing.T) {
 	t.Parallel()
 	type testCase struct {
 		input []string

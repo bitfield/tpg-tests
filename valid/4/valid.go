@@ -1,4 +1,4 @@
-package valid4
+package valid
 
 import "strings"
 

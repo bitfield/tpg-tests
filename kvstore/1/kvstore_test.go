@@ -6,7 +6,7 @@ import (
 	"sync"
 	"testing"
 
-	"kvstore"
+	"github.com/bitfield/kvstore"
 )
 
 func TestSmokeKVStore(t *testing.T) {
@@ -14,12 +14,12 @@ func TestSmokeKVStore(t *testing.T) {
 	var wg sync.WaitGroup
 	wg.Add(1)
 	go func() {
-		for i := 0; i < 1000; i++ {
+		for i := range 1000 {
 			kvstore.Set("foo", strconv.Itoa(i))
 		}
 		wg.Done()
 	}()
-	for i := 0; i < 1000; i++ {
+	for i := range 1000 {
 		_ = kvstore.Get("foo")
 		runtime.Gosched()
 	}

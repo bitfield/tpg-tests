@@ -1,5 +1,3 @@
-module past2
+module github.com/bitfield/past
 
 go 1.19
-
-require github.com/google/go-cmp v0.5.8

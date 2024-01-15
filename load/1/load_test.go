@@ -5,8 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"load"
-
+	"github.com/bitfield/load"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 )

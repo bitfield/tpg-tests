@@ -3,9 +3,7 @@ package ages_test
 import (
 	"testing"
 
-	"ages"
-
-	"github.com/google/go-cmp/cmp"
+	"github.com/bitfield/ages"
 )
 
 func TestTotalReturnsTotalOfSuppliedAges(t *testing.T) {
@@ -13,7 +11,7 @@ func TestTotalReturnsTotalOfSuppliedAges(t *testing.T) {
 	want := 128
 	got := ages.Total(makeAgeData())
 	if want != got {
-		t.Error(cmp.Diff(want, got))
+		t.Errorf("want %d, got %d", want, got)
 	}
 }
 

@@ -4,12 +4,10 @@ import (
 	"sync"
 	"testing"
 
-	"widget"
-
-	"github.com/google/go-cmp/cmp"
+	"github.com/bitfield/widget"
 )
 
-func TestCreate_GivesNoErrorForValidWidget(t *testing.T) {
+func TestCreateGivesNoErrorForValidWidget(t *testing.T) {
 	s := newMapStore()
 	w := widget.Widget{
 		ID:   "widget01",
@@ -21,7 +19,7 @@ func TestCreate_GivesNoErrorForValidWidget(t *testing.T) {
 		t.Errorf("unexpected error: %v", err)
 	}
 	if wantID != gotID {
-		t.Error(cmp.Diff(wantID, gotID))
+		t.Errorf("want %q, got %q", wantID, gotID)
 	}
 }
 

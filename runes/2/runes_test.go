@@ -1,12 +1,10 @@
-//go:build go1.18
-
-package runes2_test
+package runes_test
 
 import (
 	"testing"
 	"unicode/utf8"
 
-	runes "runes2"
+	"github.com/bitfield/runes"
 )
 
 func FuzzFirstRune(f *testing.F) {

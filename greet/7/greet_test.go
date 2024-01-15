@@ -1,10 +1,10 @@
-package greet7_test
+package greet_test
 
 import (
 	"os"
 	"testing"
 
-	greet "greet7"
+	"github.com/bitfield/greet"
 
 	"github.com/rogpeppe/go-internal/testscript"
 )

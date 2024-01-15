@@ -1,4 +1,4 @@
-package even2
+package even
 
 var cache = map[int]bool{}
 

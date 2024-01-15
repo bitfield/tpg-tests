@@ -1,11 +1,9 @@
-package user4_test
+package user_test
 
 import (
 	"testing"
 
-	user "user4"
-
-	"github.com/google/go-cmp/cmp"
+	"github.com/bitfield/user"
 )
 
 func TestGreetingReturnsCorrectGreetingForLanguage(t *testing.T) {
@@ -15,6 +13,6 @@ func TestGreetingReturnsCorrectGreetingForLanguage(t *testing.T) {
 	want := "你好"
 	got := u.Greeting()
 	if want != got {
-		t.Error(cmp.Diff(want, got))
+		t.Errorf("want %q, got %q", want, got)
 	}
 }

@@ -1,12 +1,10 @@
-package timer2_test
+package timer_test
 
 import (
 	"testing"
 	"time"
 
-	timer "timer2"
-
-	"github.com/google/go-cmp/cmp"
+	"github.com/bitfield/timer"
 )
 
 func TestNewTimerFromArgs(t *testing.T) {
@@ -16,7 +14,7 @@ func TestNewTimerFromArgs(t *testing.T) {
 		Interval: 10 * time.Second,
 	}
 	got := timer.NewTimerFromArgs(args)
-	if !cmp.Equal(want, got) {
-		t.Error(cmp.Diff(want, got))
+	if want != got {
+		t.Errorf("want %v, got %v", want, got)
 	}
 }

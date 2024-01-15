@@ -1,10 +1,10 @@
-package hello2_test
+package hello_test
 
 import (
 	"os"
 	"testing"
 
-	hello "hello2"
+	"github.com/bitfield/hello"
 
 	"github.com/rogpeppe/go-internal/testscript"
 )

@@ -1,10 +1,9 @@
 package format_test
 
 import (
-	"format"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
+	"github.com/bitfield/format"
 )
 
 const (
@@ -29,6 +28,6 @@ func TestFormatData_IsCorrectForValidInput(t *testing.T) {
 		t.Fatal(err)
 	}
 	if want != got {
-		t.Error(cmp.Diff(want, got))
+		t.Errorf("want %q, got %q", want, got)
 	}
 }

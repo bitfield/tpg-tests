@@ -4,7 +4,7 @@ import (
 	"net"
 	"testing"
 
-	"serve"
+	"github.com/bitfield/serve"
 )
 
 func TestListenAsyncEagerly(t *testing.T) {

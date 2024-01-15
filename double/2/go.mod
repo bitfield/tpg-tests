@@ -1,3 +1,3 @@
-module double2
+module github.com/bitfield/double
 
 go 1.19

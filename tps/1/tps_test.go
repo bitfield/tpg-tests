@@ -1,12 +1,11 @@
 package tps_test
 
 import (
+	"bytes"
 	"os"
 	"testing"
 
-	"tps"
-
-	"github.com/google/go-cmp/cmp"
+	"github.com/bitfield/tps"
 )
 
 func TestWriteReportFile_ProducesCorrectOutputFile(t *testing.T) {
@@ -21,7 +20,7 @@ func TestWriteReportFile_ProducesCorrectOutputFile(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if !cmp.Equal(want, got) {
-		t.Error(cmp.Diff(want, got))
+	if !bytes.Equal(want, got) {
+		t.Errorf("want %q, got %q", want, got)
 	}
 }

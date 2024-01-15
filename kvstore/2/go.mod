@@ -1,3 +1,3 @@
-module kvstore2
+module github.com/bitfield/kvstore
 
 go 1.19

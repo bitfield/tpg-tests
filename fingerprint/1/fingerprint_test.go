@@ -4,9 +4,7 @@ import (
 	"crypto/md5"
 	"testing"
 
-	"fingerprint"
-
-	"github.com/google/go-cmp/cmp"
+	"github.com/bitfield/fingerprint"
 )
 
 func TestFingerprint(t *testing.T) {
@@ -14,7 +12,7 @@ func TestFingerprint(t *testing.T) {
 	data := []byte("These pretzels are making me thirsty.")
 	want := md5.Sum(data)
 	got := fingerprint.Hash(data)
-	if !cmp.Equal(want, got) {
-		t.Error(cmp.Diff(want, got))
+	if want != got {
+		t.Errorf("want %v, got %v", want, got)
 	}
 }

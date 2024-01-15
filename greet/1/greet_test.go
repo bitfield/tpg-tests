@@ -3,7 +3,7 @@ package greet_test
 import (
 	"testing"
 
-	"greet"
+	"github.com/bitfield/greet"
 )
 
 func TestGreet(t *testing.T) {

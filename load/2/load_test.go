@@ -1,4 +1,4 @@
-package load2_test
+package load_test
 
 import (
 	"bytes"
@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	load "load2"
+	"github.com/bitfield/load"
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"

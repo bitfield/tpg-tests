@@ -1,8 +1,9 @@
-package valid2_test
+package valid_test
 
 import (
 	"testing"
-	valid "valid2"
+
+	"github.com/bitfield/valid"
 )
 
 func TestValidIsTrueForValidInput(t *testing.T) {

@@ -1,9 +1,10 @@
 package reader_test
 
 import (
-	"reader"
 	"strings"
 	"testing"
+
+	"github.com/bitfield/reader"
 )
 
 func TestReadAll_ReturnsAnyReadError(t *testing.T) {

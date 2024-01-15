@@ -1,3 +1,3 @@
-module serve4
+module github.com/bitfield/serve
 
 go 1.19

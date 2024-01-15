@@ -1,4 +1,4 @@
-package past4
+package past
 
 import "time"
 

@@ -1,8 +1,9 @@
 package double_test
 
 import (
-	"double"
 	"testing"
+
+	"github.com/bitfield/double"
 )
 
 func TestDouble2Returns4(t *testing.T) {

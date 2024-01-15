@@ -1,4 +1,4 @@
-package greet7
+package greet
 
 import (
 	"bufio"

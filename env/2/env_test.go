@@ -1,11 +1,11 @@
-package env2_test
+package env_test
 
 import (
 	"net"
 	"os"
 	"testing"
 
-	env "env2"
+	"github.com/bitfield/env"
 
 	"github.com/rogpeppe/go-internal/testscript"
 )

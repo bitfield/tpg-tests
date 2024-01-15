@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"testing"
 
-	"square"
+	"github.com/bitfield/square"
 )
 
 func TestSquareResultIsAlwaysNonNegative(t *testing.T) {

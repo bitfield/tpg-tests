@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"req"
+	"github.com/bitfield/req"
 )
 
 func TestRequestReturnsErrRateLimitWhenRatelimited(t *testing.T) {

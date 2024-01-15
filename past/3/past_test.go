@@ -1,12 +1,10 @@
-package past3_test
+package past_test
 
 import (
 	"testing"
 	"time"
 
-	past "past3"
-
-	"github.com/google/go-cmp/cmp"
+	"github.com/bitfield/past"
 )
 
 func TestOneHourAgo(t *testing.T) {
@@ -23,6 +21,6 @@ func TestOneHourAgo(t *testing.T) {
 	}
 	got := past.OneHourAgo()
 	if !want.Equal(got) {
-		t.Error(cmp.Diff(want, got))
+		t.Errorf("want %v, got %v", want, got)
 	}
 }

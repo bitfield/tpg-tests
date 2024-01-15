@@ -1,11 +1,11 @@
-package serve2_test
+package serve_test
 
 import (
 	"net"
 	"testing"
 	"time"
 
-	serve "serve2"
+	"github.com/bitfield/serve"
 )
 
 func TestListenAsyncWithSleep(t *testing.T) {

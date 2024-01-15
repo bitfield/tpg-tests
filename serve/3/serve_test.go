@@ -1,11 +1,11 @@
-package serve3_test
+package serve_test
 
 import (
 	"net"
 	"testing"
 	"time"
 
-	serve "serve3"
+	"github.com/bitfield/serve"
 )
 
 func TestListenAsyncPatiently(t *testing.T) {
