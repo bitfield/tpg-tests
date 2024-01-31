@@ -20,7 +20,7 @@ func TestSmokeKVStore(t *testing.T) {
 		}
 		wg.Done()
 	}()
-	for i := range 1000 {
+	for range 1000 {
 		_ = s.Get("foo")
 		runtime.Gosched()
 	}
