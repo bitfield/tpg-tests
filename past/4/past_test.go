@@ -7,7 +7,7 @@ import (
 	"github.com/bitfield/past"
 )
 
-func TestOneHourAgo(t *testing.T) {
+func TestOneHourAgo_ReturnsExpectedTime(t *testing.T) {
 	t.Parallel()
 	now := time.Now()
 	want := now.Add(-time.Hour)

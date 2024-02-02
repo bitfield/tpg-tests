@@ -7,7 +7,7 @@ import (
 	"github.com/bitfield/serve"
 )
 
-func TestListenAsyncEagerly(t *testing.T) {
+func TestListenAsync_ListensOnGivenAddr(t *testing.T) {
 	t.Parallel()
 	addr := randomLocalAddr(t)
 	serve.ListenAsync(addr)

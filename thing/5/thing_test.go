@@ -8,7 +8,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestNewThing(t *testing.T) {
+func TestNewThing_ReturnsThingWithGivenXYZValues(t *testing.T) {
 	t.Parallel()
 	x, y, z := 1, 2, 3
 	want := &thing.Thing{

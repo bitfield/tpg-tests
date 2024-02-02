@@ -16,7 +16,7 @@ func TestFormatURL_IncludesLocation(t *testing.T) {
 	}
 }
 
-func TestParseResponse(t *testing.T) {
+func TestParseResponse_GivesExpectedForecast(t *testing.T) {
 	t.Parallel()
 	data := []byte(`{"weather":[{"main":"Clouds"}]}`)
 	want := weather.Forecast{

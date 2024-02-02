@@ -6,7 +6,7 @@ import (
 	"github.com/bitfield/greet"
 )
 
-func TestGreet(t *testing.T) {
+func TestGreetAsksForNameAndPrintsHelloName(t *testing.T) {
 	t.Parallel()
 	greet.Greet()
 }

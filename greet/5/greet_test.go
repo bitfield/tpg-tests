@@ -10,7 +10,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestGreet(t *testing.T) {
+func TestGreetAsksForNameAndPrintsHelloName(t *testing.T) {
 	t.Parallel()
 	buf := new(bytes.Buffer)
 	input := strings.NewReader("Mary Jo\n")

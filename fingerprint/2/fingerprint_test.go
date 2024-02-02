@@ -6,7 +6,7 @@ import (
 	"github.com/bitfield/fingerprint"
 )
 
-func TestFingerprint(t *testing.T) {
+func TestHashGivesSameUniqueHashForSameData(t *testing.T) {
 	t.Parallel()
 	data := []byte("These pretzels are making me thirsty.")
 	orig := fingerprint.Hash(data)

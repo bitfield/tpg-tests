@@ -8,7 +8,7 @@ import (
 	"github.com/bitfield/serve"
 )
 
-func TestListenAsyncWithHelper(t *testing.T) {
+func TestListenAsync_ListensWithinReasonableTime(t *testing.T) {
 	t.Parallel()
 	addr := randomLocalAddr(t)
 	serve.ListenAsync(addr)

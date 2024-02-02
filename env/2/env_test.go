@@ -16,7 +16,7 @@ func TestMain(m *testing.M) {
 	}))
 }
 
-func TestScriptWithExtraEnvVars(t *testing.T) {
+func TestWithExtraEnvVars(t *testing.T) {
 	t.Parallel()
 	addr := randomLocalAddr(t)
 	testscript.Run(t, testscript.Params{

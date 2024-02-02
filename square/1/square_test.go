@@ -8,7 +8,7 @@ import (
 	"github.com/bitfield/square"
 )
 
-func TestSquareResultIsAlwaysNonNegative(t *testing.T) {
+func TestSquareGivesNonNegativeResult(t *testing.T) {
 	t.Parallel()
 	inputs := rand.Perm(100)
 	for _, n := range inputs {

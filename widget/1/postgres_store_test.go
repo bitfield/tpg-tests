@@ -8,7 +8,7 @@ import (
 	"github.com/DATA-DOG/go-sqlmock"
 )
 
-func TestPostgresStore_Retrieve(t *testing.T) {
+func TestPostgresStore_RetrievesExpectedWidget(t *testing.T) {
 	t.Parallel()
 	ps := fakePostgresStore(t)
 	want := widget.Widget{

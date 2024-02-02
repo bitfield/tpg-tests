@@ -7,7 +7,7 @@ import (
 	"github.com/bitfield/timer"
 )
 
-func TestParseArgs(t *testing.T) {
+func TestParseArgs_SetsTimerToGivenDuration(t *testing.T) {
 	t.Parallel()
 	want := 10 * time.Millisecond
 	got := timer.ParseArgs([]string{"timer", "10ms"})

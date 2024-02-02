@@ -7,7 +7,7 @@ import (
 	"github.com/bitfield/timer"
 )
 
-func TestNewTimerFromArgs(t *testing.T) {
+func TestNewTimerFromArgs_SetsTimerToGivenDuration(t *testing.T) {
 	t.Parallel()
 	args := []string{"program", "10s"}
 	want := timer.Timer{

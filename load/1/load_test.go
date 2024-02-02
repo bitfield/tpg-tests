@@ -10,7 +10,7 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 )
 
-func TestNewLoadTester(t *testing.T) {
+func TestNewLoadTester_SetsCorrectConfig(t *testing.T) {
 	t.Parallel()
 	want := &load.LoadTester{
 		URL:        "https://example.com",

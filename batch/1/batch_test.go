@@ -9,7 +9,7 @@ import (
 	"github.com/bitfield/batch"
 )
 
-func TestRunBatchJob(t *testing.T) {
+func TestRunBatchJob_RunsJobWithinReasonableTime(t *testing.T) {
 	t.Parallel()
 	ctx, cancel := context.WithTimeout(context.Background(),
 		10*time.Millisecond)

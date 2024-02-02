@@ -13,7 +13,7 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 )
 
-func TestNewLoadTester(t *testing.T) {
+func TestNewLoadTester_SetsCorrectConfig(t *testing.T) {
 	t.Parallel()
 	buf := new(bytes.Buffer)
 	want := &load.LoadTester{

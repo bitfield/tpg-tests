@@ -1,2 +1,2 @@
-exec go test -run 'CompareMaps|CompareSortedSlices'
-! exec go test -run 'CompareSlices'
+exec go test -run 'Maps|Slices.*AnyOrder'
+! exec go test -run 'Slices.*SameOrder'

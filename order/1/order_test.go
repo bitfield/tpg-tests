@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestCompareMaps(t *testing.T) {
+func TestMapsHaveSameContents(t *testing.T) {
 	t.Parallel()
 	want := map[int]bool{1: true, 2: false}
 	got := map[int]bool{2: false, 1: true}
@@ -15,7 +15,7 @@ func TestCompareMaps(t *testing.T) {
 	}
 }
 
-func TestCompareSlices(t *testing.T) {
+func TestSlicesHaveSameElementsInSameOrder(t *testing.T) {
 	t.Parallel()
 	want := []int{1, 2, 3}
 	got := []int{3, 2, 1}
@@ -24,7 +24,7 @@ func TestCompareSlices(t *testing.T) {
 	}
 }
 
-func TestCompareSortedSlices(t *testing.T) {
+func TestSlicesHaveSameElementsInAnyOrder(t *testing.T) {
 	t.Parallel()
 	want := []int{1, 2, 3}
 	got := []int{3, 2, 1}

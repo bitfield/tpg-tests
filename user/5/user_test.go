@@ -6,7 +6,7 @@ import (
 	"github.com/bitfield/user"
 )
 
-func TestCreate(t *testing.T) {
+func TestCreateCreatesGivenUser(t *testing.T) {
 	t.Parallel()
 	user.Create("Alice")
 	if !user.Exists("Alice") {

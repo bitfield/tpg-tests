@@ -9,7 +9,7 @@ import (
 	"github.com/bitfield/kvstore"
 )
 
-func TestSmokeKVStore(t *testing.T) {
+func TestKVStore_HasNoDataRace(t *testing.T) {
 	t.Parallel()
 	var wg sync.WaitGroup
 	wg.Add(1)

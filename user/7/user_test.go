@@ -6,7 +6,7 @@ import (
 	"github.com/bitfield/user"
 )
 
-func TestCreate(t *testing.T) {
+func TestCreateCreatesGivenUser(t *testing.T) {
 	t.Parallel()
 	if user.Exists("Alice") {
 		t.Fatal("Alice unexpectedly exists")
@@ -17,7 +17,7 @@ func TestCreate(t *testing.T) {
 	}
 }
 
-func TestDelete(t *testing.T) {
+func TestDeleteDeletesGivenUserOnly(t *testing.T) {
 	t.Parallel()
 	createUserOrFail(t, "Alice")
 	createUserOrFail(t, "Bob")
