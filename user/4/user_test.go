@@ -8,9 +8,9 @@ import (
 
 func TestGreetingReturnsCorrectGreetingForLanguage(t *testing.T) {
 	t.Parallel()
-	u := user.New("刘慈欣")
-	u.Language = "Chinese"
-	want := "你好"
+	u := user.New("Hercule Poirot")
+	u.Language = "French"
+	want := "Bonjour"
 	got := u.Greeting()
 	if want != got {
 		t.Errorf("want %q, got %q", want, got)

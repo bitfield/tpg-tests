@@ -12,7 +12,7 @@ func New(name string) User {
 }
 
 var greeting = map[string]string{
-	"Chinese": "你好",
+	"French":  "Bonjour",
 	"Spanish": "¿Que tal?",
 }
 
