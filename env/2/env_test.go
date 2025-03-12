@@ -2,7 +2,6 @@ package env_test
 
 import (
 	"net"
-	"os"
 	"testing"
 
 	"github.com/bitfield/env"
@@ -11,9 +10,9 @@ import (
 )
 
 func TestMain(m *testing.M) {
-	os.Exit(testscript.RunMain(m, map[string]func() int{
+	testscript.Main(m, map[string]func(){
 		"listen": env.Main,
-	}))
+	})
 }
 
 func TestWithExtraEnvVars(t *testing.T) {

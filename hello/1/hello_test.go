@@ -1,7 +1,6 @@
 package hello_test
 
 import (
-	"os"
 	"testing"
 
 	"github.com/bitfield/hello"
@@ -10,9 +9,9 @@ import (
 )
 
 func TestMain(m *testing.M) {
-	os.Exit(testscript.RunMain(m, map[string]func() int{
+	testscript.Main(m, map[string]func(){
 		"hello": hello.Main,
-	}))
+	})
 }
 
 func Test(t *testing.T) {

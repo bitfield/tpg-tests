@@ -6,12 +6,11 @@ import (
 	"os"
 )
 
-func Main() int {
+func Main() {
 	fmt.Println("Your name? ")
 	scanner := bufio.NewScanner(os.Stdin)
 	if !scanner.Scan() {
-		return 1
+		os.Exit(1)
 	}
 	fmt.Printf("Hello, %s!\n", scanner.Text())
-	return 0
 }

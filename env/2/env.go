@@ -7,10 +7,10 @@ import (
 	"os"
 )
 
-func Main() int {
+func Main() {
 	if len(os.Args[1:]) < 1 {
 		fmt.Fprintln(os.Stderr, "usage: listen ADDR")
-		return 1
+		os.Exit(1)
 	}
 	srv := http.Server{
 		Addr: os.Args[1],
@@ -28,7 +28,6 @@ func Main() int {
 	srv.Handler = mux
 	if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 		fmt.Fprintln(os.Stderr, err)
-		return 1
+		os.Exit(1)
 	}
-	return 0
 }
