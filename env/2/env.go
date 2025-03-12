@@ -26,7 +26,8 @@ func Main() {
 		close(done)
 	})
 	srv.Handler = mux
-	if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+	err := srv.ListenAndServe()
+	if err != http.ErrServerClosed {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
 	}
