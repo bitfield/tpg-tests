@@ -1,7 +1,7 @@
 package square_test
 
 import (
-	"math/rand"
+	"math/rand/v2"
 	"strconv"
 	"testing"
 

@@ -1,7 +1,7 @@
 package codec_test
 
 import (
-	"math/rand"
+	"math/rand/v2"
 	"testing"
 
 	"github.com/bitfield/codec"
@@ -9,7 +9,7 @@ import (
 
 func TestEncodeFollowedByDecodeGivesStartingValue(t *testing.T) {
 	t.Parallel()
-	input := rand.Intn(10) + 1
+	input := rand.IntN(10) + 1
 	encoded := codec.Encode(input)
 	t.Logf("encoded value: %#v", encoded)
 	want := input
