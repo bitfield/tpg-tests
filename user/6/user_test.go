@@ -21,7 +21,7 @@ func TestDeleteDeletesGivenUser(t *testing.T) {
 	t.Parallel()
 	user.Create("Alice")
 	if !user.Exists("Alice") {
-		t.Error("Alice not created")
+		t.Fatal("Alice not created")
 	}
 	user.Delete("Alice")
 	if user.Exists("Alice") {

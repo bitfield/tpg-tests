@@ -34,6 +34,6 @@ func createUserOrFail(t *testing.T, name string) {
 	t.Helper()
 	user.Create(name)
 	if !user.Exists(name) {
-		t.Errorf("%s not created", name)
+		t.Fatalf("%s not created", name)
 	}
 }
